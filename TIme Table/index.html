@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Table</Table></title>
+    <link rel="icon" type="image/x-icon" href="assests/logo.png">
+    <style>
+      html,
+      body {
+          height: 100%;
+          margin: 0;
+          padding: 0;
+          font-family: Arial, sans-serif;
+      }
+      .watermark {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0.5;
+        }
+      .container {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          height: 100%;
+      }
+
+      .content {
+          flex-grow: 1;
+      }
+
+      table {
+          border-collapse: collapse;
+          width: 100%;
+          margin: auto;
+      }
+
+      .desc,
+      .header {
+          text-align: center;
+          padding: 20px;
+      }
+
+      .header {
+          background-color: gray;
+          color: white;
+      }
+
+      th {
+          background-color: gray;
+          color: white;
+          border: solid 1px black;
+      }
+
+      td {
+          text-align: center;
+          border: solid 1px black;
+      }
+
+      .footer {
+          background-color: gray;
+          color: white;
+          text-align: center;
+          padding: 10px;
+      }
+  </style>
+</head>
+<body>
+    <div><center><img src="/TIme Table/assests/logo.png" alt="Logo"/>
+      <p>JSS MAHAVIDYAPEETHA</p>
+        <p>JSS SCIENCE AND TECHNOLOGY UNIVERSITY</p>
+        <h3>SRI JAYACHAMARAJENDRA COLLEGE OF ENGINEERING MYSORE</h3></center>
+      </div>
+    <table>
+      <center>
+        <th>DAY</th>
+        <th>7:30-8:30</th>
+        <th>8:30-9:30</th>
+        <th>9:30-10:30</th>
+        <th>10:30-11:00</th>
+        <th>11:00-11:50</th>
+        <th>11:50-12:40</th>
+        <th>12:40-1:30</th>
+        <th>1:30-2:30</th>
+        <th>2:30-3:30</th>
+        <th>3:30-4:30</th>
+        <th>4:30-5:30</th>
+        <tr>
+            <td><b>MON</b></td>
+            <td></td>
+            <td></td>
+            <td><b>OE-II</b></td>
+            <td rowspan="6"><center><b>Break</b></center></td>
+            <td>20CS641/<br>20CS642/<br>20CS643</td>
+            <td>20HU612</td>
+            <td>20CS610</td>
+            <td rowspan="6"><b>Break</b></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><b>TUE</b></td>
+            <td></td>
+            <td></td>
+            <td><b>OE-III</b></td>
+            <td><p>20CS610</p><p>[CS002]</p></td>
+            <td><p>20CS620</p><p>[IS HALL]</p></td>
+            <td><p>20HU612</p><p>[IS HALL]</p></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><b>WED</b></td>
+            <td></td>
+            <td>20CS641/<br>20CS642/<br>20CS643</td>
+            <td><b>OE-II</b></td>
+            <td colspan="3"><b><center><p>20CS630P E2<br>HW LAB<br>[11.00-1.00]</p></center></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><b>THR</b></td>
+            <td></td>
+            <td><p>20CS610</p><p>[CS002]</p></td>
+            <td><b>OE-III</b></td>
+            <td colspan="3"><b><center>20CS67L E2<br>SW Lab 1<br><hr>20CS68L E1<br>SW Lab 2</center></td>
+            <td><p>20CS630</p><p>[CS103]</p></td>
+            <td><p>20CS610</p><p>[CS103]</p></td>
+            <td><p>20CS620</p><p>[CS103]</p></td>
+        </tr>
+        <tr>
+            <td><b>FRI</b></td>
+            <td></td>
+            <td>20CS641/<br>20CS642/<br>20CS643</td>
+            <td><b>OE-III</b></td>
+            <td><p>20CS630</p><p>[CS103]</p></td>
+            <td><p>20CS610</p><p>[CS103]</p></td>
+            <td><p>20CS620</p><p>[CS103]</p></td>
+            <b><td colspan="2"><b><center><p>20CS630P E1</p><p>HW Lab</p></center></b></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><b>SAT</b></td>
+            <td></td>
+            <td></td>
+            <td><b>OE-III</b></td>
+            <td colspan="3"><b><center>20CS67L E1<br>SW Lab 1<br><hr>20CS68L E2<br>SW Lab 2</center></td>
+            <td colspan="3"></td>
+        </tr>
+    </table>
+    <br><br>
+    <table>
+        <thead>
+            <tr>
+                <th>Subject Code</th>
+                <th>Subject</th>
+                <th>Credits</th>
+                <th>Course Instructors</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>20CS610</td>
+                <td>Machine Learning</td>
+                <td>4</td>
+                <td>Prof. SNM</td>
+            </tr>
+            <tr>
+                <td>20CS620</td>
+                <td>Web Technology</td>
+                <td>4</td>
+                <td>Prof. VS</td>
+            </tr>
+            <tr>
+                <td>20CS630</td>
+                <td>Internet of Things</td>
+                <td>3</td>
+                <td>Prof. SGC</td>
+              </tr>
+              <tr>
+                <td>
+                  <p>20CS641</p>
+                  <p>20CS642</p>
+                  <p>20CS643</p>
+                </td>
+                <td>
+                  <p>Cloud Computing</p>
+                  <p>Automative Cyber Security</p>
+                  <p>Cyber Security</p>
+                </td>
+                <td>3</td>
+                <td>
+                  <p>Prof. MAA</p>
+                  <p>Prof. HDN</p>
+                  <p>Prof. SPM / Prof. RP/Prof RK</p>
+                </td>
+              </tr>
+              <tr>
+                <td>20CS65X</td>
+                <td>Open Elective - II</td>
+                <td>3</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>20CS66X</td>
+                <td>Open Elective - III</td>
+                <td>3</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>20CS67L</td>
+                <td>Machine Learning Laboratory</td>
+                <td>1.5</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>20CS68L</td>
+                <td>Web Technology Laboratory</td>
+                <td>1.5</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>20CS630P</td>
+                <td>Internet of Things Practical</td>
+                <td>1</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>20CS69P</td>
+                <td>Mini Project</td>
+                <td>2</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>20HU612</td>
+                <td>Constitution of India and Professional Ethics</td>
+                <td>0</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>Total Credits</td>
+                <td>25</td>
+                <td></td>
+              </tr>
+        </tbody>
+    </table></center><br><br>
+    <footer><center>
+        <p>&copy; 2024 JSS MAHAVIDYAPEETHA. All rights reserved.</p>
+        <a href="https://jssstuniv.in/#/">JSS STU</a>
+    </footer>
+    <img src="/TIme Table/assests/logo.png" alt="Logo" class="watermark">
+  </center>
+  </body>
+</html>
