@@ -6,64 +6,31 @@
     <title>Time Table</Table></title>
     <link rel="icon" type="image/x-icon" href="assests/logo.png">
     <style>
-      html,
       body {
-          height: 100%;
+          font-family: Arial, sans-serif;
           margin: 0;
           padding: 0;
-          font-family: Arial, sans-serif;
+          position: relative;
       }
-      .watermark {
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            opacity: 0.5;
-        }
       .container {
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-          height: 100%;
+          max-width: 800px;
+          margin: auto;
       }
-
-      .content {
-          flex-grow: 1;
-      }
-
       table {
           border-collapse: collapse;
           width: 100%;
-          margin: auto;
       }
-
-      .desc,
-      .header {
+      th, td {
+          border: 3px solid black;
+          padding: 8px;
           text-align: center;
-          padding: 20px;
       }
-
-      .header {
-          background-color: gray;
-          color: white;
-      }
-
-      th {
-          background-color: gray;
-          color: white;
-          border: solid 1px black;
-      }
-
-      td {
-          text-align: center;
-          border: solid 1px black;
-      }
-
-      .footer {
-          background-color: gray;
-          color: white;
-          text-align: center;
-          padding: 10px;
+      .watermark {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          opacity: 0.5;
       }
   </style>
 </head>
